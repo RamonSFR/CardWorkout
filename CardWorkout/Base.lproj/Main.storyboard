@@ -68,7 +68,6 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="rulesButtonTapepd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtK-MG-9Cy"/>
                                     <segue destination="dhL-mD-6iQ" kind="presentation" id="dfX-k3-eBi"/>
                                 </connections>
                             </button>
@@ -89,6 +88,9 @@
                     <connections>
                         <outlet property="cardImageView" destination="zgg-x6-VIW" id="Kko-CP-5ru"/>
                         <outletCollection property="buttons" destination="znc-SU-WIx" collectionClass="NSMutableArray" id="18N-UK-oeY"/>
+                        <outletCollection property="buttons" destination="u2A-1i-pzv" collectionClass="NSMutableArray" id="BVw-7b-jnc"/>
+                        <outletCollection property="buttons" destination="znc-SU-WIx" collectionClass="NSMutableArray" id="jEa-DV-fH8"/>
+                        <outletCollection property="buttons" destination="ibY-xu-PPL" collectionClass="NSMutableArray" id="EMD-BN-bbv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,17 +120,74 @@ J = 11, Q = 12, K = 13, A = 14</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-lZ-cT4">
-                                <rect key="frame" x="96.666666666666686" y="363" width="200" height="100.33333333333331"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-lZ-cT4" userLabel="♠ = Push-up ❤️ = Sit-up ♣ = Burpees ♦️ = Jumping Jacks">
+                                <rect key="frame" x="46" y="362" width="300" height="100.33333333333331"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="yrF-yr-fWg"/>
+                                    <constraint firstAttribute="width" constant="200" id="CRK-T0-1fb"/>
                                 </constraints>
-                                <string key="text">♠ = Push-up
-❤️ = Sit-up
-♣ = Burpees
-♦️ = Jumping Jacks</string>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="♠️">
+                                        <attributes>
+                                            <font key="NSFont" size="21" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> = Push-up
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="❤️">
+                                        <attributes>
+                                            <font key="NSFont" size="21" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> = Sit-up
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="♣️">
+                                        <attributes>
+                                            <font key="NSFont" size="21" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> = Burpees
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="♦️">
+                                        <attributes>
+                                            <font key="NSFont" size="21" name=".AppleColorEmojiUI"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" = Jumping Jacks">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -138,17 +197,17 @@ J = 11, Q = 12, K = 13, A = 14</string>
                             <constraint firstItem="8bo-UO-6r0" firstAttribute="top" secondItem="qGy-5w-5jg" secondAttribute="bottom" constant="25" id="EvA-ce-4jZ"/>
                             <constraint firstItem="qGy-5w-5jg" firstAttribute="leading" secondItem="fpR-2n-Dxd" secondAttribute="leading" constant="30" id="GSe-aX-gDE"/>
                             <constraint firstItem="8bo-UO-6r0" firstAttribute="leading" secondItem="fpR-2n-Dxd" secondAttribute="leading" constant="30" id="HFE-j6-I7U"/>
-                            <constraint firstItem="AQE-lZ-cT4" firstAttribute="top" secondItem="8bo-UO-6r0" secondAttribute="bottom" constant="75" id="IG1-22-u0g"/>
                             <constraint firstItem="fpR-2n-Dxd" firstAttribute="trailing" secondItem="8bo-UO-6r0" secondAttribute="trailing" constant="30" id="NSS-40-MKh"/>
                             <constraint firstItem="qGy-5w-5jg" firstAttribute="top" secondItem="fpR-2n-Dxd" secondAttribute="top" constant="70" id="fII-nh-1pY"/>
-                            <constraint firstItem="AQE-lZ-cT4" firstAttribute="centerX" secondItem="yGs-zi-IS2" secondAttribute="centerX" id="kUO-kR-kie"/>
+                            <constraint firstItem="AQE-lZ-cT4" firstAttribute="centerX" secondItem="yGs-zi-IS2" secondAttribute="centerX" id="ndr-qG-q2D"/>
+                            <constraint firstItem="AQE-lZ-cT4" firstAttribute="top" secondItem="8bo-UO-6r0" secondAttribute="bottom" constant="75" id="pot-KE-4Hv"/>
                             <constraint firstItem="fpR-2n-Dxd" firstAttribute="trailing" secondItem="qGy-5w-5jg" secondAttribute="trailing" constant="30" id="zZI-3v-hrX"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqg-I1-IBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="-27"/>
+            <point key="canvasLocation" x="1070.9923664122136" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
