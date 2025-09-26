@@ -1,5 +1,5 @@
 //
-//  Card.swift
+//  CardDeck.swift
 //  CardWorkout
 //
 //  Created by Ramon Sávio Fontes Rocha on 17/09/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Card {
+struct CardDeck {
     static var allValues = [
         UIImage(named: "AS")!, // SPADE CARDS
         UIImage(named: "2S")!,
